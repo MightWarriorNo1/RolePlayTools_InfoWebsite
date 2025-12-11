@@ -1,6 +1,8 @@
 {
-  "buildCommand": "cd ../.. && pnpm build",
-  "installCommand": "pnpm install",
-  "framework": "nextjs"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
-
